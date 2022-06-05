@@ -1,6 +1,7 @@
 # read version from installed package
 import imp
 from importlib.metadata import version
+
 __version__ = version("pycounts")
 
 # populate package namespace
