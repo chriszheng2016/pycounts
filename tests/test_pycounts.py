@@ -29,8 +29,10 @@ def test_count_words(einstein_counts):
     """Test word counting from a file."""
     expected = einstein_counts
     import os
+
     print(f"cwd:{os.getcwd()}")
     import sys
+
     [print(p) for p in sys.path]
     actual = count_words("tests/einstein.txt")
     assert actual == expected, "Einstein quote counted incorrectly!"
